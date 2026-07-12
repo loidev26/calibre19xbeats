@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Favicon -->
+	<link rel="icon" type="image/png" href="resources/images/logo.jpg">
+
+	<!-- Bootstrap CSS Link -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+
+	<!-- Bootstrap Icons -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+	<!-- External CSS -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+
+	<!-- Google Fonts Link -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
+
+	<title>Calibre19xbeats</title>
+</head>
+<body class="bg-dark overflow-x-hidden m-0 vh-100">
+	<!-- navbar start -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-black">
+		<div class="container-fluid">
+
+			<!-- Logo + Hamburger + Cart + Login -->
+            <div class="d-flex align-items-center flex-grow-1">
+                <button class="navbar-toggler me-2"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarMenu"
+                    aria-controls="navbarMenu"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand d-flex align-items-center gap-2 m-0" href="#">
+                    <img src="resources/images/logo.png" class="logo" alt="Logo">
+                    <span class="d-none d-md-inline">Calibre19xBeats</span>
+                </a>
+                <div class="d-flex ms-auto d-lg-none">
+	            	<button class="btn border-0 bg-transparent text-secondary ms-auto">
+	            	    <i class="bi bi-cart"></i>
+	            	    <span class="d-none">$0.00</span>
+	            	</button>
+	            	<div class="vr mx-1 bg-white my-auto"></div>
+	            	<button class="btn border-0 bg-transparent text-secondary">
+	            	    <i class="bi bi-person d-none d-md-none"></i>
+	            	     <span>Log In</span>
+	            	</button>  
+                </div>          
+            </div>
+
+           <!-- Desktop Search -->
+           <form class="d-none d-lg-flex flex-grow-1 mx-5 flex-grow-1" role="search">
+           		<div class="input-group hovering">
+		       		<span class="input-group-text border-end-0 border-0 bg-black">
+		       		    <a class="bi bi-search text-secondary"></a>
+		       		</span>
+		       		<input
+		       		    class="form-control border-0 bi bi-search bg-black"
+		       		    type="search"
+		       		    placeholder="What are you looking for?"
+		       		    aria-label="Search">
+		       		    <!-- Search Dropdown -->
+		       		  	<button class="btn btn-black dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+		       		    	<i class="bi bi-music-note-beamed"> Tracks</i>
+		       		  	</button>
+		       		  	<ul class="dropdown-menu dropdown-menu-end bg-dark">
+			       		    <li><a class="dropdown-item" href="#">Hard Trap</a></li>
+			       		    <li><a class="dropdown-item" href="#">Early 2000's x G-Funk West Coast</a></li>
+			       		    <li><a class="dropdown-item" href="#">Early 2000's R&B</a></li>
+			       		    <li><a class="dropdown-item" href="#">Afro Drill / Melodic Drill</a></li>
+			       		    <li><a class="dropdown-item" href="#">West Coast x Stockton CA</a></li>
+			       		    <li><a class="dropdown-item" href="#">2000's Hip Hop</a></li>
+		       		  	</ul>	
+           		</div>
+           </form>
+
+          <!-- Menu -->
+          <div class="collapse navbar-collapse" id="navbarMenu">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Beats</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">Contact</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                  </li>
+              </ul>
+              <!-- Cart + Login -->
+              <div class="d-flex align-items-center ms-auto ms-md-auto d-flex hovering">
+              	<button class="btn border-0 ms-auto hovering">
+              	    <i class="bi bi-cart"></i>
+              	    <span>$0.00</span>
+              	</button>
+              	<div class="vr mx-1 bg-white my-auto"></div>
+              	<button class="btn border-0">
+              	    <i class="bi bi-person"></i>
+              	    <span>Log In</span>
+              	</button>             	
+              </div>
+          </div>
+		</div>
+	</nav>
+
+	<!-- Mobile Display -->
+	<!-- Search bar -->
+    <div class="bg-black px-3 pb-3 d-lg-none">
+       	<form role="search">
+       		<div class="input-group hovering">
+       		<span class="input-group-text border-end-0 bg-black border-0">
+       		    <a class="bi bi-search text-secondary"></a>
+       		</span>
+       		<input
+       		    class="form-control border-0 bi bi-search bg-black"
+       		    type="search"
+       		    placeholder="What are you looking for?"
+       		    aria-label="Search">
+       		    <!-- Search Dropdown -->
+       		  	<button class="btn btn-black dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+       		    	<i class="bi bi-music-note-beamed"> Tracks</i>
+       		  	</button>
+       		  	<ul class="dropdown-menu dropdown-menu-end bg-dark">
+	       		    <li><a class="dropdown-item" href="#">Hard Trap</a></li>
+	       		    <li><a class="dropdown-item" href="#">Early 2000's x G-Funk West Coast</a></li>
+	       		    <li><a class="dropdown-item" href="#">Early 2000's R&B</a></li>
+	       		    <li><a class="dropdown-item" href="#">Afro Drill / Melodic Drill</a></li>
+	       		    <li><a class="dropdown-item" href="#">West Coast x Stockton CA</a></li>
+	       		    <li><a class="dropdown-item" href="#">2000's Hip Hop</a></li>
+       		  	</ul>	
+       		</div>
+       </form>
+    </div>
+	<!-- navbar end -->
+
+	<!-- Hero Page Start -->
+	<section id="hero" class="">
+		<div class="container-fluid h-100">
+			<div class="d-flex flex-column justify-content-center align-items-center w-50 h-100">
+				<h1 class="text-smoke">Turn Your Lyrics Into Hits</h1>
+				<input type="text" placeholder="Type a beat name or genre"name="search">
+			</div>
+		</div>
+	</section>
+	<!-- Hero Page End -->
+
+	<!-- Bootstrap JS Script -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
+"></script>
+</body>
+</html>

@@ -19,183 +19,110 @@
 	<!-- Google Fonts Link -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&family=Inter:opsz@14..32&display=swap" rel="stylesheet">
 
 	<title>Calibre19xbeats</title>
 </head>
 <body class="bg-dark overflow-x-hidden m-0 vh-100">
 	<!-- navbar start -->
-	<nav class="navbar navbar-expand-lg navbar-dark bg-black">
-		<div class="container-fluid">
+  <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
+    <div class="container-fluid">
 
-			<!-- Logo + Hamburger + Cart + Login -->
-            <div class="d-flex align-items-center flex-grow-1">
-                <button class="navbar-toggler me-2"
-                    type="button"
-                    data-bs-toggle="collapse"
-                    data-bs-target="#navbarMenu"
-                    aria-controls="navbarMenu"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation">
+      <!-- Hamburger -->
+      <button class="navbar-toggler" type="button" 
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <a class="navbar-brand d-flex align-items-center gap-2 m-0" href="#">
-                    <img src="resources/images/logo.png" class="logo" alt="Logo">
-                    <span class="d-none d-md-inline">Calibre19xBeats</span>
-                </a>
-                <div class="d-flex ms-auto d-lg-none">
-	            	<button class="btn border-0 bg-transparent text-secondary ms-auto">
-	            	    <i class="bi bi-cart"></i>
-	            	    <span class="d-none">$0.00</span>
-	            	</button>
-	            	<div class="vr mx-1 bg-white my-auto"></div>
-	            	<button class="btn border-0 bg-transparent text-secondary">
-	            	    <i class="bi bi-person d-none d-md-none"></i>
-	            	     <span>Log In</span>
-	            	</button>  
-                </div>          
-            </div>
+      <!-- Brand -->
+      <a class="navbar-brand text-smoke me-sm-auto ps-3" href="#">CalxB</a>
+      <!-- Offcanvas / Navbar menu -->
+      <div class="offcanvas offcanvas-start bg-black navbar-collapse" 
+        tabindex="-1" 
+        id="offcanvasNavbar">
 
-           <!-- Desktop Search -->
-           <form class="d-none d-lg-flex flex-grow-1 mx-5 flex-grow-1" role="search">
-           		<div class="input-group hovering">
-		       		<span class="input-group-text border-end-0 border-0 bg-black">
-		       		    <a class="bi bi-search text-secondary"></a>
-		       		</span>
-		       		<input
-		       		    class="form-control border-0 bi bi-search bg-black"
-		       		    type="search"
-		       		    placeholder="What are you looking for?"
-		       		    aria-label="Search">
-		       		    <!-- Search Dropdown -->
-		       		  	<button class="btn btn-black dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-		       		    	<i class="bi bi-music-note-beamed"> Tracks</i>
-		       		  	</button>
-		       		  	<ul class="dropdown-menu dropdown-menu-end bg-dark">
-			       		    <li><a class="dropdown-item" href="#">Hard Trap</a></li>
-			       		    <li><a class="dropdown-item" href="#">Early 2000's x G-Funk West Coast</a></li>
-			       		    <li><a class="dropdown-item" href="#">Early 2000's R&B</a></li>
-			       		    <li><a class="dropdown-item" href="#">Afro Drill / Melodic Drill</a></li>
-			       		    <li><a class="dropdown-item" href="#">West Coast x Stockton CA</a></li>
-			       		    <li><a class="dropdown-item" href="#">2000's Hip Hop</a></li>
-		       		  	</ul>	
-           		</div>
-           </form>
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title text-smoke">
+            Calibre19xbeats
+          </h5>
+          <button type="button" 
+            class="btn-close" 
+            data-bs-dismiss="offcanvas">
+          </button>
+        </div>
 
-          <!-- Menu -->
-          <div class="collapse navbar-collapse" id="navbarMenu">
-              <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-lg-3">
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Beats</a>
-                  </li>
+        <div class="offcanvas-body">
 
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">Contact</a>
-                  </li>
+          <!-- Navigation -->
+          <ul class="navbar-nav d-flex gap-3">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span class="bi bi-house me-2 d-lg-none"></span>Home
+              </a>
+            </li>
 
-                  <li class="nav-item">
-                      <a class="nav-link" href="#">About</a>
-                  </li>
-              </ul>
-              <!-- Cart + Login -->
-              <div class="d-flex align-items-center ms-auto ms-md-auto d-flex hovering">
-              	<button class="btn border-0 ms-auto hovering">
-              	    <i class="bi bi-cart"></i>
-              	    <span>$0.00</span>
-              	</button>
-              	<div class="vr mx-1 bg-white my-auto"></div>
-              	<button class="btn border-0">
-              	    <i class="bi bi-person"></i>
-              	    <span>Log In</span>
-              	</button>             	
-              </div>
-          </div>
-		</div>
-	</nav>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="bi bi-headphones me-2 d-lg-none"></span>Beats
+              </a>
+            </li>
 
-	<!-- Mobile Display -->
-	<!-- Search bar -->
-    <div class="bg-black px-3 pb-3 d-lg-none">
-       	<form role="search">
-       		<div class="input-group hovering">
-       		<span class="input-group-text border-end-0 bg-black border-0">
-       		    <a class="bi bi-search text-secondary"></a>
-       		</span>
-       		<input
-       		    class="form-control border-0 bi bi-search bg-black"
-       		    type="search"
-       		    placeholder="What are you looking for?"
-       		    aria-label="Search">
-       		    <!-- Search Dropdown -->
-       		  	<button class="btn btn-black dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-       		    	<i class="bi bi-music-note-beamed"> Tracks</i>
-       		  	</button>
-       		  	<ul class="dropdown-menu dropdown-menu-end bg-dark">
-	       		    <li><a class="dropdown-item" href="#">Hard Trap</a></li>
-	       		    <li><a class="dropdown-item" href="#">Early 2000's x G-Funk West Coast</a></li>
-	       		    <li><a class="dropdown-item" href="#">Early 2000's R&B</a></li>
-	       		    <li><a class="dropdown-item" href="#">Afro Drill / Melodic Drill</a></li>
-	       		    <li><a class="dropdown-item" href="#">West Coast x Stockton CA</a></li>
-	       		    <li><a class="dropdown-item" href="#">2000's Hip Hop</a></li>
-       		  	</ul>	
-       		</div>
-       </form>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="bi bi-envelope me-2 d-lg-none"></span>Contact
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span class="bi bi-info-circle me-2 d-lg-none"></span>About
+              </a>
+            </li>
+          </ul>
+
+        <!-- Search -->
+        <div class="input-group navbar-search my-auto ms-auto" style="max-width:350px;">
+          <button class="btn btn-outline-light" type="button">
+            <i class="bi bi-search"></i>
+          </button>
+
+          <input type="text"
+            class="form-control bg-black text-light border-light"
+            placeholder="Search...">
+
+          <button class="btn btn-secondary dropdown-toggle"
+            type="button"
+            data-bs-toggle="dropdown">
+            Tracks
+          </button>
+
+          <ul class="dropdown-menu w-100">
+            <li><a class="dropdown-item" href="#">Hard Trap</a></li>
+            <li><a class="dropdown-item" href="#">Early 2000's x G-Funk West Coast</a></li>
+            <li><a class="dropdown-item" href="#">Early 2000's R&B</a></li>
+            <li><a class="dropdown-item" href="#">Afro Drill / Melodic Drill</a></li>
+            <li><a class="dropdown-item" href="#">West Coast x Stockton CA</a></li>
+            <li><a class="dropdown-item" href="#">2000's Hip Hop</a></li>
+          </ul>
+
+        </div>
+      </div>
     </div>
-	<!-- navbar end -->
-
-	<!-- Hero Page Start -->
-	<section id="hero" class="">
-		<div class="container-fluid vh-100">
-			<div class="row vh-100">
-				<!-- hero left -->
-				<div class="col-md-6 d-flex flex-column justify-content-center px-5"> 
-					<div class="input-group">
-						<label for="search">
-							<h1 class="text-smoke">Turn Your Lyrics Into Hits</h1>
-						</label>
-						<input type="text" placeholder="Type a beat name or genre"name="search" id="search" class="w-75 p-3">
-						<button type="button" class="text-secondary border-1 bg-black p-3">Search</button>
-					</div>
-				</div>
-				<!-- hero right -->
-				<div class="col-md-6">
-					<div id="carouselExampleIndicators" class="carousel slide">
-					  <div class="carousel-indicators silde h-100">
-					    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-					    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-					    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-					  </div>
-					  <div class="carousel-inner">
-					    <div class="carousel-item active">
-					     <div class="ratio ratio-16x9 h-100">
-		             <video class="w-100 h-100 object-fit-cover" autoplay muted loop playsinline>
-		                <source src="resources/videos/bloom.mp4" type="video/mp4">
-		                Your browser does not support the video tag.
-		              </video>
-					    </div>
-					    <div class="carousel-item">
-					      <img src="..." class="d-block w-100" alt="...">
-					    </div>
-					    <div class="carousel-item">
-					      <img src="..." class="d-block w-100" alt="...">
-					    </div>
-					  </div>
-					  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-					    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-					    <span class="visually-hidden">Previous</span>
-					  </button>
-					  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-					    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-					    <span class="visually-hidden">Next</span>
-					  </button>
-					</div>
-					
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Hero Page End -->
+    
+    <!-- Cart + Login -->
+    <div class="d-flex gap-2">
+      <a class="btn btn-outline-light" href="#">
+        <span class="bi bi-bag me-2"></span>Cart
+      </a>
+      <a class="btn btn-outline-light" href="#">
+        <span class="bi bi-person me-2"></span>Log In
+      </a>
+    </div>
+  </div>
+</nav>
+<!-- navbar end -->
 
 	<!-- Bootstrap JS Script -->
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js

@@ -1,3 +1,15 @@
+/* text */
+
+.text-anton {
+    font-family: "Anton", sans-serif;
+}
+
+.text-inter {
+    font-family: "inter", sans-serif;
+}
+
+/* text-end */
+
 /* color */
 
 .text-smoke {
@@ -32,3 +44,13 @@ nav .navbar-nav a {
 }
 
 /* navbar end */
+
+/* landing start */
+#landing {
+    background-image: url("resources/images/smokey.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+/* landing end */

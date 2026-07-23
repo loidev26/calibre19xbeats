@@ -1,56 +1,80 @@
-/* text */
+.navbar, nav {
+    --bs-navbar-color:  #2D3449;
+    --bs-navbar-hover-color: #ffffff;
+    --bs-navbar-brand-color: #DDB7FF;
+    --bs-navbar-brand-hover-color: #ffffff;
+    --bs-navbar-brand-margin-end: auto;
 
-.text-anton {
-    font-family: "Anton", sans-serif;
+    background-color: #0B1326;
 }
 
-.text-inter {
-    font-family: "inter", sans-serif;
+.navbar-brand, .offcanvas-title {
+    font-family: 'sora';
+    font-weight: 700;
 }
 
-/* text-end */
-
-/* color */
-
-.text-smoke {
-    color: #D4D4D4;
+.offcanvas {
+    background-color: #2D3449;
 }
 
-/* color end */
-
-/* navbar start */
-
-nav {
-    font-family: "Anton", sans-serif;
+.logo {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
-@media (min-width: 992px) {
-    .navbar-search {
-        width: 50% !important;
-    }
+nav h5,
+.navbar-brand,
+.navbar .btn i,
+.offcanvas .nav-link {
+    color: #DDB7FF;
+    transition: color 0.3s ease;
 }
 
-nav .navbar-nav a {
-    font-family: "inter", sans-serif;
+.navbar-brand:hover,
+.navbar .btn:hover i,
+.offcanvas .nav-link:hover {
+    color: #ffffff !important;
 }
 
-.input-group {
-    font-family: "inter", sans-serif;
+nav form .form-control {
+    border-radius: 0.25rem;
+    border-left: none;
+    background-color: #131B2E;
+    color: #ffffff;
 }
 
-::placeholder {
-    color: #D4D4D4 !important;
+.search-input {
+    border: none;
+    box-shadow: none;
+    background-color: #2D3449;
+    color: #fff;
+}
+
+.search-input::placeholder {
+    color: #c8b8d9;
     opacity: 1;
 }
 
-/* navbar end */
-
-/* landing start */
-#landing {
-    background-image: url("resources/images/smokey.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
+.search-input:focus {
+    border: none;
+    box-shadow: none;
+    background-color: #2D3449;
+    color: #fff;
 }
-/* landing end */
+
+.search-btn {
+    border: none;
+    background-color: #2D3449;
+    color: #DDB7FF;
+}
+
+.search-btn:hover {
+    background-color: #3A425C;
+    color: #fff;
+}
+
+.search-btn:focus {
+    box-shadow: none;
+}

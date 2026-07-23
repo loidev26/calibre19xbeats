@@ -1,153 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	<!-- Favicon -->
-	<link rel="icon" type="image/png" href="resources/images/logo.jpg">
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="resources/images/logo.jpg">
 
-	<!-- Bootstrap CSS Link -->
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
+    <!-- Bootstrap CSS Link -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css">
 
-	<!-- Bootstrap Icons -->
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-	<!-- External CSS -->
-	<link rel="stylesheet" type="text/css" href="./index.css">
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
 
-	<!-- Google Fonts Link -->
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans&family=Inter:opsz@14..32&display=swap" rel="stylesheet">
+    <!-- Google Fonts Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@700&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
-	<title>Calibre19xbeats</title>
+    <title>Calibre19xbeats</title>
   </head>
   <body class="bg-dark overflow-x-hidden m-0 vh-100">
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg bg-black navbar-dark fixed-top">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
       <div class="container-fluid">
-
-        <!-- Hamburger -->
-        <button class="navbar-toggler" type="button" 
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar">
+        <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-
-        <!-- Brand -->
-        <a class="navbar-brand text-smoke me-auto px-2" href="#">CalxB</a>
-        <!-- Offcanvas / Navbar menu -->
-        <div class="offcanvas offcanvas-start bg-black navbar-collapse" 
-          tabindex="-1" 
-          id="offcanvasNavbar">
-
+        <a class="navbar-brand p-2" href="#">Calibre19xbeats</a>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title text-smoke">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              <img src="resources/images/logo.jpg" alt="Logo" class="img-fluid logo">
               Calibre19xbeats
             </h5>
-            <button type="button" 
-              class="btn-close" 
-              data-bs-dismiss="offcanvas">
-            </button>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-
           <div class="offcanvas-body">
-
-            <!-- Navigation -->
-            <ul class="navbar-nav d-flex gap-3">
+            <ul class="navbar-nav align-items-start flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <span class="bi bi-house me-2 d-lg-none"></span>Home
-                </a>
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span class="bi bi-headphones me-2 d-lg-none"></span>Beats
-                </a>
+                <a class="nav-link" href="#">Beats</a>
               </li>
-
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span class="bi bi-envelope me-2 d-lg-none"></span>Contact
-                </a>
+                <a class="nav-link" href="#">Licensing</a>
               </li>
-
               <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <span class="bi bi-info-circle me-2 d-lg-none"></span>About
-                </a>
+                <a class="nav-link" href="#">Contact</a>
               </li>
             </ul>
-
-          <!-- Search -->
-          <div class="input-group navbar-search my-auto ms-auto" style="max-width:350px;">
-            <button class="btn btn-outline-light" type="button">
-              <i class="bi bi-search"></i>
-            </button>
-
-            <input type="text"
-              class="form-control bg-black text-light border-light"
-              placeholder="Search...">
-
-            <button class="btn btn-secondary dropdown-toggle"
-              type="button"
-              data-bs-toggle="dropdown">
-              Tracks
-            </button>
-
-            <ul class="dropdown-menu w-100">
-              <li><a class="dropdown-item" href="#">Hard Trap</a></li>
-              <li><a class="dropdown-item" href="#">Early 2000's x G-Funk West Coast</a></li>
-              <li><a class="dropdown-item" href="#">Early 2000's R&B</a></li>
-              <li><a class="dropdown-item" href="#">Afro Drill / Melodic Drill</a></li>
-              <li><a class="dropdown-item" href="#">West Coast x Stockton CA</a></li>
-              <li><a class="dropdown-item" href="#">2000's Hip Hop</a></li>
-            </ul>
-
-          </div>
-        </div>
-      </div>
-      
-      <!-- Cart + Login -->
-      <div class="d-flex gap-2">
-        <a class="btn btn-outline-light" href="#">
-          <span class="bi bi-bag me-2"></span>Cart
-        </a>
-        <a class="btn btn-outline-light" href="#">
-          <span class="bi bi-person me-2"></span>Log In
-        </a>
-      </div>
-    </div>
-    </nav>
-    <!-- navbar end -->
-
-    <!-- Landing Page Start -->
-    
-    <!-- Landing Page Start -->
-    <section id="landing">
-      <div class="container px-3">
-        <div class="row">
-          <div class="col-12 col-sm-12 col-md-12">
-            <div class="input-group d-flex flex-column justify-content-center vh-100 align-items-center">
-            <h1 class="text-anton text-center text-light fw-bold mt-5">Find the Beat That Fits Your Sound.</h1>
-            <div class="input-group w-75">
-                <input type="text"
-                  class="form-control bg-black text-light border-light p-2"
-                  placeholder="Find a beat by title or artist type...">
-                <button class="btn btn-outline-light" type="button" title="Search">
-                  <i class="bi bi-search"></i>
+            <form class="input-group my-auto w-25 d-none d-lg-flex" role="search">
+                <button class="btn search-btn" type="submit" title="Search">
+                    <i class="bi bi-search"></i>
                 </button>
-              </div>
-          </div>
+                <input
+                    class="form-control search-input"
+                    type="search"
+                    placeholder="Search beats..."
+                    aria-label="Search">
+            </form>
           </div>
         </div>
+        <a type="button" class="btn" href="#" title="Cart">
+            <i class="bi bi-cart3"></i>
+        </a>
+        <a type="button" class="btn" href="#" title="Account">
+            <i class="bi bi-person-circle"></i>
+        </a>
       </div>
-    </section>
-    <!-- Bootstrap JS Script -->
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Home Section Start -->
+    
+    <!-- Home Section End -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js
-  "></script>
+    "></script>
   </body>
 </html>

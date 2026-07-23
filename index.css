@@ -87,6 +87,19 @@ nav form .form-control {
 /* Navbar CSS End */
 
 /* Home CSS start */
+#home {
+    height: 100vh;
+    padding-top: 76px;
+}
+
+#home .container-fluid,
+#home .row {
+    height: 100%;
+}
+
+#home .row {
+    align-items: center;
+}
 
 #home .text-premium {
     font-family: 'JetBrains Mono';
@@ -151,6 +164,15 @@ nav form .form-control {
     }
 }
 
+/* Home CSS End */
+
+/* Beats CSS Start */
+
+#beats h2,
+#beats p {
+    color: #DAE2FD;
+}
+
 #beats .form-control::placeholder {
     color: #adb5bd;
 }
@@ -188,3 +210,39 @@ nav form .form-control {
     background-color: #2D3449 !important;
     color: #fff !important;
 }
+
+#beats .bpm-btn,
+#beats .bpm-range-text,
+#beats ul {
+    color: #CFC2D6;
+    background-color: #171F33;
+}
+
+#beats .span-container, .bpm-range-text {
+    font-family: 'geist';
+    font-size: 12px;
+    background-color: #171F33;
+}
+
+#beats .bg-filter-container .bg-bi-filter {
+    background-color: #0B1326;
+}
+
+#beats .bpm-number-range-text,
+#beats .bg-bi-filter {
+    font-family: 'Anton';
+    font-size: 24px;
+    color: #DDB7FF;
+    letter-spacing: 2px;
+    background-color: #171F33;
+}
+
+#beats .bpm-divider {
+    width: 100%;
+    height: 8px;
+    background: #3b4261;
+    border-radius: 999px;
+    margin-top: 18px;
+}
+
+/* Beats CSS Start */

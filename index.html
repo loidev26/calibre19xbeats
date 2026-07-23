@@ -19,11 +19,11 @@
     <!-- Google Fonts Link -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Geist:ital,wght@0,100..900;1,100..900&family=Hanken+Grotesk:wght@700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Geist:ital,wght@0,100..900;1,100..900&family=Hanken+Grotesk:wght@700&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Sora:wght@100..800&display=swap" rel="stylesheet">
 
     <title>Calibre19xbeats</title>
   </head>
-  <body class="bg-dark overflow-x-hidden m-0 vh-100">
+  <body class="bg-dark overflow-x-hidden m-0">
     <!-- Navbar Start -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top border-bottom border-1 border-secondary">
       <div class="container-fluid">
@@ -37,21 +37,21 @@
               <img src="resources/images/logo.jpg" alt="Logo" class="img-fluid logo">
               Calibre19xbeats
             </h5>
-            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
             <ul class="navbar-nav align-items-start flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Beats</a>
+                <a class="nav-link" href="#beats">Beats</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Licensing</a>
+                <a class="nav-link" href="#licensing">Licensing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
             <form class="input-group my-auto w-25 d-none d-lg-flex" role="search">
@@ -66,12 +66,14 @@
             </form>
           </div>
         </div>
-        <a type="button" class="btn" href="#" title="Cart">
-            <i class="bi bi-cart3"></i>
-        </a>
-        <a type="button" class="btn" href="#" title="Account">
-            <i class="bi bi-person-circle"></i>
-        </a>
+        <div class="d-flex flex-wrap">
+          <a type="button" class="btn" href="#" title="Cart">
+              <i class="bi bi-cart3"></i>
+          </a>
+          <a type="button" class="btn" href="#" title="Account">
+              <i class="bi bi-person-circle"></i>
+          </a>
+        </div>
       </div>
     </nav>
     <!-- Navbar End -->
@@ -79,12 +81,12 @@
     <!-- Home Start -->
     <section id="home">
       <div class="container-fluid">
-        <div class="row align-items-center vh-100">
+        <div class="row align-items-center">
           <div class="col-12 col-lg-6 px-3 px-lg-5">
             <p class="text-premium">PREMIUM PRODUCTION MARKETPLACE</p>
               <h1 class="home-tag-line">Premium Beats for Artists Who Stand Out</h1>
               <p class="home-description">Access industry-standard beats from the world's most innovative producers. Instant delivery, professional mixing, and flexible licensing for every artist.</p>
-              <div class="d-flex gap-2 mt-4">
+              <div class="d-flex flex-wrap gap-2 mt-4">
                 <button class="browse-btn px-5 py-3 rounded">Browse All Beats</button>
                 <button class="free-btn px-5 py-3 bg-transparent border border-1 rounded">Free Downloads</button>
               </div>
@@ -99,8 +101,10 @@
 
     <!-- Beats Section Start -->
     <section id="beats">
-      <div class="container">
-        <div class="input-group my-3 d-flex d-lg-none">
+      <div class="container-fluid">
+        <h2>Featured Beats</h2>
+        <p>High-energy productions trending this week</p>
+        <div class="input-group my-3 d-flex d-md-none">
           <span class="input-group-text">
             <i class="bi bi-search text-secondary"></i>
           </span>
@@ -111,7 +115,7 @@
             placeholder="Search by name, mood, or artist style..."
             aria-label="Search">
         </div>
-        <div class="dropdown border border-1 border-secondary rounded-3 d-flex d-lg-none">
+        <div class="dropdown border border-1 border-secondary rounded-3 d-flex d-md-none">
           <a
             class="btn btn-secondary dropdown-toggle d-flex justify-content-between align-items-center w-100 py-3"
             href="#"
@@ -133,6 +137,39 @@
             <li><a class="dropdown-item" href="#">Afro Drill/Melodic Drill</a></li>
             <li><a class="dropdown-item" href="#">West Coast x Stockton CA</a></li>
             <li><a class="dropdown-item" href="#">2000's Hip Hop</a></li>
+          </ul>
+        </div>
+        <div class="bg-filter-container  d-flex overflow-auto gap-3 flex-nowrap my-3 d-md-none">
+          <span class="d-inline-block my-auto">
+            <i class="bi bi-filter bg-bi-filter text-success"></i>
+          </span>
+          <button class="btn btn-outline-success">Hip Hop</button>
+          <button class="btn btn-outline-success">Trap</button>
+          <button class="btn btn-outline-success">R&B</button>
+          <button class="btn btn-outline-success">Pop</button>
+          <button class="btn btn-outline-success">Drill</button>
+          <button class="btn btn-outline-success">EDM</button>
+        </div>
+        <div class="dropdown d-md-none">
+          <button
+            class="btn btn-dark border w-100 py-4 bpm-btn"
+            type="button"
+            data-bs-toggle="dropdown"
+          >
+            <div class="span-container d-flex justify-content-between align-items-center">
+              <span class="bpm-range-text">BPM RANGE</span>
+              <span class="bpm-number-range-text">120–160 <i class="bi bi-chevron-down"></i></span>
+            </div>
+            <div class="bpm-divider"></div>
+          </button>
+
+          <ul class="dropdown-menu w-100">
+            <li><a class="dropdown-item" href="#">60–80 BPM</a></li>
+            <li><a class="dropdown-item" href="#">81–100 BPM</a></li>
+            <li><a class="dropdown-item" href="#">101–120 BPM</a></li>
+            <li><a class="dropdown-item" href="#">121–140 BPM</a></li>
+            <li><a class="dropdown-item" href="#">141–160 BPM</a></li>
+            <li><a class="dropdown-item" href="#">161–200 BPM</a></li>
           </ul>
         </div>
       </div>

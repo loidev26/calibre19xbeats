@@ -1,3 +1,8 @@
+* {
+    background-color: #0B1326;
+}
+
+/* Navbar CSS Start */
 .navbar, nav {
     --bs-navbar-color:  #2D3449;
     --bs-navbar-hover-color: #ffffff;
@@ -77,4 +82,109 @@ nav form .form-control {
 
 .search-btn:focus {
     box-shadow: none;
+}
+
+/* Navbar CSS End */
+
+/* Home CSS start */
+
+#home .text-premium {
+    font-family: 'JetBrains Mono';
+    color: #D2BBFF;
+}
+
+#home .home-tag-line {
+    color: #DAE2FD;
+    font-family: 'Sora';
+    font-size: 64px;
+}
+
+#home .home-description {
+    color: #CCC3D8;
+}
+
+#home .browse-btn {
+    color: #EDE0FF;
+    background-color: #7C3AED;
+    font-size: 24px;
+    font-family: 'Sora';
+    font-weight: 600;
+}
+
+#home .free-btn {
+    color: #D2BBFF;
+    font-size: 24px;
+    font-family: 'Sora';
+    font-weight: 600;
+}
+
+/* Home CSS End */
+
+#beats{
+    padding-top: 80px; /* Adjust to your navbar height */
+}
+
+#beats .input-group-text {
+    background-color: #2D3449;
+    border-color: #2D3449;
+    color: white;
+}
+
+#beats .form-control, i {
+    background-color: #2D3449;
+    border-color: #2D3449;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    #home .home-tag-line {
+        font-size: 40px;
+    }
+
+    #home .home-description {
+        font-size: 16px;
+    }
+
+    #home .browse-btn,
+    #home .free-btn {
+        font-size: 18px;
+    }
+}
+
+#beats .form-control::placeholder {
+    color: #adb5bd;
+}
+
+#beats .dropdown-toggle span .text-sort{
+    color: #CFC2D6;
+    font-family: 'Geist';
+    font-size: 12px;
+}
+
+#beats .dropdown-toggle span .text-newest{
+    font-family: 'Anton';
+    font-size: 24px;
+}
+
+#beats .dropdown-toggle,
+#beats .dropdown-toggle span,
+#beats .dropdown-menu,
+#beats .dropdown-item {
+    background-color: #171F33;
+    border-color: #171F33;
+    color: #DDB7FF;
+}
+
+#beats .dropdown-menu {
+    background-color: #171F33;
+}
+
+#beats .dropdown-item {
+    color: #DDB7FF;
+}
+
+#beats .dropdown-item:hover,
+#beats .dropdown-item:focus {
+    background-color: #2D3449 !important;
+    color: #fff !important;
 }
